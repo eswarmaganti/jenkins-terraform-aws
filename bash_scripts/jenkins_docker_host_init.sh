@@ -22,3 +22,6 @@ yes | sudo apt-get update
 # install the docker packages
 yes | sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
+# creating a directory in /home for jenkins master to connect to agent
+sudo mkdir /home/jenkins
+sudo chown ubuntu: /home/jenkins 
