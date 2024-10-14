@@ -15,4 +15,5 @@ module "ec2_instances" {
   jenkins_docker_host_sg_id         = module.security_groups.jenkins_docker_host_sg_id
   jenkins_master_sg_id              = module.security_groups.jenkins_master_sg_id
   ubuntu_ami_id                     = "ami-0b8b44ec9a8f90422"
+  depends_on                        = [module.security_groups]
 }
